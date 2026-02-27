@@ -2,9 +2,11 @@ name: Daily Repository Update
 
 on:
   schedule:
-    # Runs every day at 09:15 UTC (specific time, no wildcards)
-    - cron: '15 9 * * *'
+    - cron: '23 11 * * *'   # Runs daily at 11:23 UTC (specific time)
   workflow_dispatch:
+
+permissions:
+  contents: write   # 🔥 REQUIRED to push commits
 
 jobs:
   daily-commit:
@@ -13,15 +15,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: 24f2004625@ds.study.iitm.ac.in - Generate daily update
         run: |
-          echo "Last updated on $(date -u)" >> daily-log.txt
+          echo "Last updated on $(date -u)" > daily-log.txt
 
       - name: Commit and push changes
         run: |
           git config user.name "DevSync Automation Bot"
           git config user.email "24f2004625@ds.study.iitm.ac.in"
           git add daily-log.txt
-          git commit -m "Automated daily update: $(date -u)" || echo "No changes to commit"
+          git commit -m "Automated daily update: $(date -u)"
           git push
