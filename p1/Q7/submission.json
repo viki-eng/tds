@@ -1,0 +1,8 @@
+{
+  "prompt": "A Japanese ukiyo-e woodblock print in the style of Edo-period art, depicting a highly intricate ocean wave with exaggerated detailed patterns in one area, while surrounding waves are simpler and different, symbolic of overfitting, flat colors, strong outlines, minimal shading, traditional composition, no text",
+  "model": "banana",
+  "concept": "overfitting",
+  "tradition_name": "Japanese ukiyo-e woodblock print",
+  "tradition_period": "Edo period (1603–1868)",
+  "tradition_approach": "Flat color planes, bold outlines, stylized wave patterns, asymmetrical composition inspired by Hokusai to represent overly complex fitting in one region"
+}
