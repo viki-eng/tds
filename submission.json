@@ -1,0 +1,7 @@
+{
+  "prompt": "A realistic cinematic scene of a fisherman in a sea completely covered with plastic waste instead of water, pulling up a fishing net full of plastic bottles and debris with no fish, in the distance a mother holding a child watching silently, dark and emotional atmosphere, symbolic of environmental crisis, no text",
+  "model": "banana",
+  "dataset_name": "Plastic Pollution – Our World in Data",
+  "dataset_url": "https://ourworldindata.org/plastic-pollution",
+  "insight": "The ocean is no longer able to provide food, as plastic pollution replaces marine life and threatens human survival"
+}
